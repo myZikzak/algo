@@ -54,7 +54,7 @@ class Graph:
                     self.vertices[p1].append(segment)
                     self.vertices[p2].append(segment)
                     C.union(p1,p2)
-                if C.ranks[C.find(p1)] == C.size - 1:
+                if C.size == 1:
                     return
         else:
             pass
